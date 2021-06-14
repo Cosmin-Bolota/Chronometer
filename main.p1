@@ -1,0 +1,592 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[p mainexit ]
+"12 ../main.c
+[v _init `(v ~T0 @X0 0 ef ]
+"1961 C:\Program Files\Microchip\xc8\v1.33\include\pic16lf1937.h
+[v _OSCCON `Vuc ~T0 @X0 0 e@153 ]
+"3250
+[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
+"1271
+[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
+"3307
+[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
+"1332
+[v _TRISB `Vuc ~T0 @X0 0 e@141 ]
+"412
+[v _PORTA `Vuc ~T0 @X0 0 e@12 ]
+"473
+[v _PORTB `Vuc ~T0 @X0 0 e@13 ]
+"918
+[v _T1CON `Vuc ~T0 @X0 0 e@24 ]
+"8922
+[v _TMR1IE `Vb ~T0 @X0 0 e@1160 ]
+"8346
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"8068
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"8924
+[v _TMR1IF `Vb ~T0 @X0 0 e@136 ]
+"899
+[v _TMR1H `Vuc ~T0 @X0 0 e@23 ]
+"880
+[v _TMR1L `Vuc ~T0 @X0 0 e@22 ]
+"49 C:\Program Files\Microchip\xc8\v1.33\include\pic16lf1937.h
+[; <" INDF0 equ 00h ;# ">
+"68
+[; <" INDF1 equ 01h ;# ">
+"87
+[; <" PCL equ 02h ;# ">
+"106
+[; <" STATUS equ 03h ;# ">
+"169
+[; <" FSR0L equ 04h ;# ">
+"188
+[; <" FSR0H equ 05h ;# ">
+"210
+[; <" FSR1L equ 06h ;# ">
+"229
+[; <" FSR1H equ 07h ;# ">
+"248
+[; <" BSR equ 08h ;# ">
+"299
+[; <" WREG equ 09h ;# ">
+"318
+[; <" PCLATH equ 0Ah ;# ">
+"337
+[; <" INTCON equ 0Bh ;# ">
+"414
+[; <" PORTA equ 0Ch ;# ">
+"475
+[; <" PORTB equ 0Dh ;# ">
+"536
+[; <" PORTC equ 0Eh ;# ">
+"597
+[; <" PORTD equ 0Fh ;# ">
+"658
+[; <" PORTE equ 010h ;# ">
+"695
+[; <" PIR1 equ 011h ;# ">
+"756
+[; <" PIR2 equ 012h ;# ">
+"812
+[; <" PIR3 equ 013h ;# ">
+"857
+[; <" TMR0 equ 015h ;# ">
+"876
+[; <" TMR1 equ 016h ;# ">
+"882
+[; <" TMR1L equ 016h ;# ">
+"901
+[; <" TMR1H equ 017h ;# ">
+"920
+[; <" T1CON equ 018h ;# ">
+"991
+[; <" T1GCON equ 019h ;# ">
+"1067
+[; <" TMR2 equ 01Ah ;# ">
+"1086
+[; <" PR2 equ 01Bh ;# ">
+"1105
+[; <" T2CON equ 01Ch ;# ">
+"1175
+[; <" CPSCON0 equ 01Eh ;# ">
+"1228
+[; <" CPSCON1 equ 01Fh ;# ">
+"1273
+[; <" TRISA equ 08Ch ;# ">
+"1334
+[; <" TRISB equ 08Dh ;# ">
+"1395
+[; <" TRISC equ 08Eh ;# ">
+"1456
+[; <" TRISD equ 08Fh ;# ">
+"1517
+[; <" TRISE equ 090h ;# ">
+"1554
+[; <" PIE1 equ 091h ;# ">
+"1615
+[; <" PIE2 equ 092h ;# ">
+"1671
+[; <" PIE3 equ 093h ;# ">
+"1716
+[; <" OPTION_REG equ 095h ;# ">
+"1798
+[; <" PCON equ 096h ;# ">
+"1848
+[; <" WDTCON equ 097h ;# ">
+"1906
+[; <" OSCTUNE equ 098h ;# ">
+"1963
+[; <" OSCCON equ 099h ;# ">
+"2034
+[; <" OSCSTAT equ 09Ah ;# ">
+"2095
+[; <" ADRES equ 09Bh ;# ">
+"2101
+[; <" ADRESL equ 09Bh ;# ">
+"2120
+[; <" ADRESH equ 09Ch ;# ">
+"2139
+[; <" ADCON0 equ 09Dh ;# ">
+"2227
+[; <" ADCON1 equ 09Eh ;# ">
+"2298
+[; <" LATA equ 010Ch ;# ">
+"2359
+[; <" LATB equ 010Dh ;# ">
+"2420
+[; <" LATC equ 010Eh ;# ">
+"2481
+[; <" LATD equ 010Fh ;# ">
+"2550
+[; <" LATE equ 0110h ;# ">
+"2587
+[; <" CM1CON0 equ 0111h ;# ">
+"2643
+[; <" CM1CON1 equ 0112h ;# ">
+"2708
+[; <" CM2CON0 equ 0113h ;# ">
+"2764
+[; <" CM2CON1 equ 0114h ;# ">
+"2829
+[; <" CMOUT equ 0115h ;# ">
+"2854
+[; <" BORCON equ 0116h ;# ">
+"2880
+[; <" FVRCON equ 0117h ;# ">
+"2955
+[; <" DACCON0 equ 0118h ;# ">
+"3015
+[; <" DACCON1 equ 0119h ;# ">
+"3066
+[; <" SRCON0 equ 011Ah ;# ">
+"3136
+[; <" SRCON1 equ 011Bh ;# ">
+"3197
+[; <" APFCON equ 011Dh ;# ">
+"3252
+[; <" ANSELA equ 018Ch ;# ">
+"3309
+[; <" ANSELB equ 018Dh ;# ">
+"3366
+[; <" ANSELD equ 018Fh ;# ">
+"3435
+[; <" ANSELE equ 0190h ;# ">
+"3474
+[; <" EEADR equ 0191h ;# ">
+"3480
+[; <" EEADRL equ 0191h ;# ">
+"3499
+[; <" EEADRH equ 0192h ;# ">
+"3518
+[; <" EEDAT equ 0193h ;# ">
+"3524
+[; <" EEDATL equ 0193h ;# ">
+"3529
+[; <" EEDATA equ 0193h ;# ">
+"3561
+[; <" EEDATH equ 0194h ;# ">
+"3580
+[; <" EECON1 equ 0195h ;# ">
+"3641
+[; <" EECON2 equ 0196h ;# ">
+"3660
+[; <" RCREG equ 0199h ;# ">
+"3679
+[; <" TXREG equ 019Ah ;# ">
+"3698
+[; <" SP1BRG equ 019Bh ;# ">
+"3704
+[; <" SP1BRGL equ 019Bh ;# ">
+"3709
+[; <" SPBRG equ 019Bh ;# ">
+"3713
+[; <" SPBRGL equ 019Bh ;# ">
+"3757
+[; <" SP1BRGH equ 019Ch ;# ">
+"3762
+[; <" SPBRGH equ 019Ch ;# ">
+"3794
+[; <" RCSTA equ 019Dh ;# ">
+"3855
+[; <" TXSTA equ 019Eh ;# ">
+"3916
+[; <" BAUDCON equ 019Fh ;# ">
+"3967
+[; <" WPUB equ 020Dh ;# ">
+"4036
+[; <" WPUE equ 0210h ;# ">
+"4056
+[; <" SSPBUF equ 0211h ;# ">
+"4075
+[; <" SSPADD equ 0212h ;# ">
+"4094
+[; <" SSPMSK equ 0213h ;# ">
+"4113
+[; <" SSPSTAT equ 0214h ;# ">
+"4174
+[; <" SSPCON1 equ 0215h ;# ">
+"4179
+[; <" SSPCON equ 0215h ;# ">
+"4295
+[; <" SSPCON2 equ 0216h ;# ">
+"4356
+[; <" SSPCON3 equ 0217h ;# ">
+"4417
+[; <" CCPR1 equ 0291h ;# ">
+"4423
+[; <" CCPR1L equ 0291h ;# ">
+"4442
+[; <" CCPR1H equ 0292h ;# ">
+"4461
+[; <" CCP1CON equ 0293h ;# ">
+"4542
+[; <" PWM1CON equ 0294h ;# ">
+"4603
+[; <" CCP1AS equ 0295h ;# ">
+"4608
+[; <" ECCP1AS equ 0295h ;# ">
+"4724
+[; <" PSTR1CON equ 0296h ;# ">
+"4767
+[; <" CCPR2 equ 0298h ;# ">
+"4773
+[; <" CCPR2L equ 0298h ;# ">
+"4792
+[; <" CCPR2H equ 0299h ;# ">
+"4811
+[; <" CCP2CON equ 029Ah ;# ">
+"4892
+[; <" PWM2CON equ 029Bh ;# ">
+"4953
+[; <" CCP2AS equ 029Ch ;# ">
+"4958
+[; <" ECCP2AS equ 029Ch ;# ">
+"5074
+[; <" PSTR2CON equ 029Dh ;# ">
+"5117
+[; <" CCPTMRS0 equ 029Eh ;# ">
+"5204
+[; <" CCPTMRS1 equ 029Fh ;# ">
+"5237
+[; <" CCPR3 equ 0311h ;# ">
+"5243
+[; <" CCPR3L equ 0311h ;# ">
+"5262
+[; <" CCPR3H equ 0312h ;# ">
+"5281
+[; <" CCP3CON equ 0313h ;# ">
+"5362
+[; <" PWM3CON equ 0314h ;# ">
+"5423
+[; <" CCP3AS equ 0315h ;# ">
+"5428
+[; <" ECCP3AS equ 0315h ;# ">
+"5544
+[; <" PSTR3CON equ 0316h ;# ">
+"5587
+[; <" CCPR4 equ 0318h ;# ">
+"5593
+[; <" CCPR4L equ 0318h ;# ">
+"5612
+[; <" CCPR4H equ 0319h ;# ">
+"5631
+[; <" CCP4CON equ 031Ah ;# ">
+"5694
+[; <" CCPR5 equ 031Ch ;# ">
+"5700
+[; <" CCPR5L equ 031Ch ;# ">
+"5719
+[; <" CCPR5H equ 031Dh ;# ">
+"5738
+[; <" CCP5CON equ 031Eh ;# ">
+"5801
+[; <" IOCBP equ 0394h ;# ">
+"5870
+[; <" IOCBN equ 0395h ;# ">
+"5939
+[; <" IOCBF equ 0396h ;# ">
+"6008
+[; <" TMR4 equ 0415h ;# ">
+"6027
+[; <" PR4 equ 0416h ;# ">
+"6046
+[; <" T4CON equ 0417h ;# ">
+"6116
+[; <" TMR6 equ 041Ch ;# ">
+"6135
+[; <" PR6 equ 041Dh ;# ">
+"6154
+[; <" T6CON equ 041Eh ;# ">
+"6224
+[; <" LCDCON equ 0791h ;# ">
+"6294
+[; <" LCDPS equ 0792h ;# ">
+"6363
+[; <" LCDREF equ 0793h ;# ">
+"6414
+[; <" LCDCST equ 0794h ;# ">
+"6453
+[; <" LCDRL equ 0795h ;# ">
+"6530
+[; <" LCDSE0 equ 0798h ;# ">
+"6591
+[; <" LCDSE1 equ 0799h ;# ">
+"6652
+[; <" LCDSE2 equ 079Ah ;# ">
+"6713
+[; <" LCDDATA0 equ 07A0h ;# ">
+"6774
+[; <" LCDDATA1 equ 07A1h ;# ">
+"6835
+[; <" LCDDATA2 equ 07A2h ;# ">
+"6896
+[; <" LCDDATA3 equ 07A3h ;# ">
+"6957
+[; <" LCDDATA4 equ 07A4h ;# ">
+"7018
+[; <" LCDDATA5 equ 07A5h ;# ">
+"7079
+[; <" LCDDATA6 equ 07A6h ;# ">
+"7140
+[; <" LCDDATA7 equ 07A7h ;# ">
+"7201
+[; <" LCDDATA8 equ 07A8h ;# ">
+"7262
+[; <" LCDDATA9 equ 07A9h ;# ">
+"7323
+[; <" LCDDATA10 equ 07AAh ;# ">
+"7384
+[; <" LCDDATA11 equ 07ABh ;# ">
+"7445
+[; <" STATUS_SHAD equ 0FE4h ;# ">
+"7476
+[; <" WREG_SHAD equ 0FE5h ;# ">
+"7495
+[; <" BSR_SHAD equ 0FE6h ;# ">
+"7514
+[; <" PCLATH_SHAD equ 0FE7h ;# ">
+"7533
+[; <" FSR0L_SHAD equ 0FE8h ;# ">
+"7552
+[; <" FSR0H_SHAD equ 0FE9h ;# ">
+"7571
+[; <" FSR1L_SHAD equ 0FEAh ;# ">
+"7590
+[; <" FSR1H_SHAD equ 0FEBh ;# ">
+"7609
+[; <" STKPTR equ 0FEDh ;# ">
+"7628
+[; <" TOSL equ 0FEEh ;# ">
+"7647
+[; <" TOSH equ 0FEFh ;# ">
+"3 ../main.c
+[p x CLKOUTEN=OFF ]
+[p x WDTE=OFF ]
+[p x PWRTE=OFF ]
+[p x CP=OFF ]
+[p x BOREN=ON ]
+[p x FCMEN=ON ]
+[p x MCLRE=ON ]
+[p x CPD=OFF ]
+[p x IESO=ON ]
+[p x FOSC=INTOSC ]
+"4
+[p x STVREN=ON ]
+[p x BORV=LO ]
+[p x LVP=OFF ]
+[p x WRT=OFF ]
+[p x PLLEN=OFF ]
+"6
+[v _a `uc ~T0 @X0 1 e ]
+[i _a
+-> -> 0 `i `uc
+]
+"7
+[v _cifra0 `uc ~T0 @X0 1 e ]
+[v _cifra1 `uc ~T0 @X0 1 e ]
+[v _cifra2 `uc ~T0 @X0 1 e ]
+[v _cifra3 `uc ~T0 @X0 1 e ]
+"8
+[v _cifra `uc ~T0 @X0 -> 10 `i e ]
+[i _cifra
+:U ..
+-> -> 192 `i `uc
+-> -> 249 `i `uc
+-> -> 164 `i `uc
+-> -> 176 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+..
+]
+"9
+[v _digit `uc ~T0 @X0 -> 5 `i e ]
+[i _digit
+:U ..
+-> -> 254 `i `uc
+-> -> 253 `i `uc
+-> -> 251 `i `uc
+-> -> 247 `i `uc
+-> -> 255 `i `uc
+..
+]
+"10
+[v _b `ul ~T0 @X0 1 e ]
+"15
+[v _main `(v ~T0 @X0 1 ef ]
+"16
+{
+[e :U _main ]
+[f ]
+"17
+[e ( _init ..  ]
+"18
+[e :U 378 ]
+"19
+{
+"20
+[e = _cifra0 -> -> 0 `i `uc ]
+"21
+[e = _cifra1 -> -> 1 `i `uc ]
+"22
+[e = _cifra2 -> -> 2 `i `uc ]
+"23
+[e = _cifra3 -> -> 3 `i `uc ]
+"24
+{
+[e = _b -> -> -> 0 `i `l `ul ]
+[e $ < _b -> -> -> 100 `i `l `ul 380  ]
+[e $U 381  ]
+[e :U 380 ]
+[e ++ _b -> -> -> 1 `i `l `ul ]
+[e $ < _b -> -> -> 100 `i `l `ul 380  ]
+[e :U 381 ]
+}
+"25
+}
+[e :U 377 ]
+"18
+[e $U 378  ]
+[e :U 379 ]
+"26
+[e :UE 376 ]
+}
+"28
+[v _init `(v ~T0 @X0 1 ef ]
+"29
+{
+[e :U _init ]
+[f ]
+"30
+[e = _OSCCON -> -> 115 `i `uc ]
+"31
+[e = _ANSELA -> -> 0 `i `uc ]
+"32
+[e = _TRISA -> -> 0 `i `uc ]
+"33
+[e = _ANSELB -> -> 0 `i `uc ]
+"34
+[e = _TRISB -> -> 0 `i `uc ]
+"35
+[e = _PORTA -> -> 255 `i `uc ]
+"36
+[e = _PORTB -> -> 255 `i `uc ]
+"37
+[e = _T1CON -> -> 17 `i `uc ]
+"39
+[e = _TMR1IE -> -> 1 `i `b ]
+"40
+[e = _PEIE -> -> 1 `i `b ]
+"41
+[e = _GIE -> -> 1 `i `b ]
+"42
+[e :UE 383 ]
+}
+[v F3504 `(v ~T0 @X0 1 tf ]
+"44
+[v _ia2 `IF3504 ~T0 @X0 1 e ]
+"45
+{
+[e :U _ia2 ]
+[f ]
+"46
+[e $ ! _TMR1IF 385  ]
+"47
+{
+"48
+[e = _TMR1IF -> -> 0 `i `b ]
+"49
+[e = _TMR1H -> -> 246 `i `uc ]
+"50
+[e = _TMR1L -> -> 59 `i `uc ]
+"52
+[e $U 387  ]
+"53
+{
+"54
+[e :U 388 ]
+"55
+[e = _PORTA *U + &U _digit * -> -> -> 4 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"56
+[e = _PORTB *U + &U _cifra * -> _cifra0 `ux -> -> # *U &U _cifra `ui `ux ]
+"57
+[e = _PORTA *U + &U _digit * -> -> -> 0 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"58
+[e $U 386  ]
+"59
+[e :U 389 ]
+"60
+[e = _PORTA *U + &U _digit * -> -> -> 4 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"61
+[e = _PORTB *U + &U _cifra * -> _cifra1 `ux -> -> # *U &U _cifra `ui `ux ]
+"62
+[e = _PORTA *U + &U _digit * -> -> -> 1 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"63
+[e $U 386  ]
+"64
+[e :U 390 ]
+"65
+[e = _PORTA *U + &U _digit * -> -> -> 4 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"66
+[e = _PORTB *U + &U _cifra * -> _cifra2 `ux -> -> # *U &U _cifra `ui `ux ]
+"67
+[e = _PORTA *U + &U _digit * -> -> -> 2 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"68
+[e $U 386  ]
+"69
+[e :U 391 ]
+"70
+[e = _PORTA *U + &U _digit * -> -> -> 4 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"71
+[e = _PORTB *U + &U _cifra * -> _cifra3 `ux -> -> # *U &U _cifra `ui `ux ]
+"72
+[e = _PORTA *U + &U _digit * -> -> -> 3 `i `ui `ux -> -> # *U &U _digit `ui `ux ]
+"73
+[e = _a -> -> 0 `i `uc ]
+"74
+[e $U 386  ]
+"75
+[e :U 392 ]
+[e $U 386  ]
+"76
+}
+[e $U 386  ]
+"52
+[e :U 387 ]
+[e [\ ++ _a -> -> 1 `i `uc , $ -> -> 0 `i `uc 388
+ , $ -> -> 1 `i `uc 389
+ , $ -> -> 2 `i `uc 390
+ , $ -> -> 3 `i `uc 391
+ 392 ]
+"76
+[e :U 386 ]
+"77
+}
+[e :U 385 ]
+"78
+[e :UE 384 ]
+}
